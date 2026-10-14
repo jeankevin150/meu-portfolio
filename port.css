@@ -1,0 +1,175 @@
+body{
+    background-image: url(Fundo\ Abstrato\ Cósmico\ em\ Roxo\ e\ Preto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+.introducao{
+    color:white;
+    text-align: center;
+}
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 100px;
+    margin-top: 300px;
+}
+#sobre {
+    font-size: 25px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: 0;
+    margin-right: auto;
+     padding: 80px 20px;
+     margin-bottom: 200px;
+    flex: 1;
+    max-width: 800px;
+}
+.habilidade{
+    text-align: right;
+
+    max-width: 400px;
+    display:flex;
+    flex-direction: column;
+
+}
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.lista-habilidades p {
+    background-color: rgba(30, 30, 35, 0.9);
+    color: white;
+    padding: 14px 18px;
+    border: 1px solid #33343d;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.lista-habilidades p:hover{
+  transform: translateY(-5px);
+  transition: 1.0s;
+   background-color: #454550;
+}
+.tm{
+    font-size: 50px;
+    font-weight: bold;
+}
+.acesso{
+    border:none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+    padding:10px;
+}
+.acesso:hover{
+    transform:scale(1.1);
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    padding: 80px 20px;
+}
+.primestores{
+    text-align: center;
+    border-radius: 16px;
+    background:linear-gradient(to right, #111111, #FBBF24);
+    display:flex;
+    flex-direction: column;
+    padding:34px;
+    gap:10px;
+    margin-top:10px;
+    color:white;
+}
+.primestores img{
+    width:100%;
+    height:200px;
+    object-fit: contain;
+    border-radius: 45px;
+    transition: 0.3s ease;
+}
+
+.primestores img:hover{
+    transform: scale(1.1);
+}
+.joyi{
+text-align: center;
+background:linear-gradient(to right, rgb(230, 118, 230),rgb(219, 219, 91));
+color:white;
+border-radius: 16px;
+   display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:10px;
+    color:white;
+    justify-content: center;
+    padding:20px;
+}
+.joyi img{
+    width:50%;
+    height:200px;
+    object-fit: contain;
+    border-radius: 45px;
+     transition: 0.3s ease;
+     justify-content: center;
+     margin:auto;
+}
+.joyi img:hover{
+    transform: scale(1.1);
+}
+
+.futuramente{
+    border-radius: 16px;
+    background:whitesmoke;
+    color:black;
+    text-align: center;
+    justify-content: center;
+    padding:100px;
+}
+.contato{
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+.botao-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 18px 24px;
+    background-color: rgba(30, 30, 35, 0.9);
+    color: white;
+
+    border: 1px solid #33343d;
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.botao-social:hover {
+    background-color: #454550;
+    border-color: #C5B3FF;
+    transform: translateY(-5px);
+}
+
+.botao-social i {
+    font-size: 20px;
+}

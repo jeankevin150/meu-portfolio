@@ -173,3 +173,190 @@ border-radius: 16px;
 .botao-social i {
     font-size: 20px;
 }
+
+/* Ajustes gerais para diferentes telas */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Organização das seções */
+.introducao,
+.projetos,
+.contato {
+    width: 100%;
+}
+
+.sobre-container {
+    flex-wrap: wrap;
+    padding: 0 24px;
+    gap: 30px;
+}
+
+#sobre {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.habilidade {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.projetos {
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.primestores,
+.joyi,
+.futuramente {
+    flex: 1 1 280px;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.primestores img,
+.joyi img {
+    max-width: 100%;
+}
+
+.tm {
+    text-align: center;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .sobre-container {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    #sobre {
+        font-size: 20px;
+        padding: 30px 10px;
+        margin-bottom: 20px;
+    }
+
+    .habilidade {
+        text-align: left;
+    }
+
+    .projetos {
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    .futuramente {
+        padding: 60px 20px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .introducao {
+        padding: 20px 16px;
+    }
+
+    .introducao h1 {
+        font-size: 28px;
+    }
+
+    .introducao h2 {
+        font-size: 18px;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0 16px;
+    }
+
+    #sobre {
+        width: 100%;
+        font-size: 17px;
+        line-height: 1.7;
+        padding: 20px 0;
+    }
+
+    .habilidade {
+        width: 100%;
+    }
+
+    .habilidade h2 {
+        font-size: 20px;
+    }
+
+    .lista-habilidades p {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .tm {
+        font-size: 32px;
+    }
+
+    .projetos {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .primestores,
+    .joyi {
+        padding: 20px 16px;
+    }
+
+    .primestores h1,
+    .joyi h2 {
+        font-size: 23px;
+    }
+
+    .primestores h2,
+    .joyi h3 {
+        font-size: 16px;
+    }
+
+    .primestores img,
+    .joyi img {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+    }
+
+    .futuramente {
+        padding: 40px 16px;
+    }
+
+    .contato {
+        padding: 20px 16px;
+        gap: 14px;
+    }
+
+    .contato h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .botao-social {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .acesso:hover,
+    .primestores img:hover,
+    .joyi img:hover {
+        transform: none;
+    }
+}
